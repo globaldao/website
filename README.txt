@@ -1,2 +1,2 @@
-# website
-Global DAO website
+# Website
+Sitio web de Global DAO
