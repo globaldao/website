@@ -1,2 +1,0 @@
-# website
-Global DAO website
