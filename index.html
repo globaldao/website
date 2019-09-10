@@ -210,12 +210,6 @@ Example Usage:  class="clearfix sticky header-sm transparent b-0"
 
 
 
-                    <div ng-app="myApp" ng-controller="myCtrl">
-                        <p ng-bind="firstname"></p>
-                    </div>
-
-
-
                 </div>
             </section>
             <!-- / -->
@@ -248,13 +242,6 @@ Example Usage:  class="clearfix sticky header-sm transparent b-0"
 
         <script>
             w3.includeHTML();
-            w3.getHttpObject("w3data.php?model=model_cd_from_json", showDiff);
-
-            var app = angular.module('myApp', []);
-app.controller('myCtrl', function($scope) {
-    $scope.firstname = "John";
-    $scope.lastname = "Doe";
-});
         </script>
 
     </body>
