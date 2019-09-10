@@ -120,14 +120,10 @@ Example Usage:  class="clearfix sticky header-sm transparent b-0"
                 <div class="container">
                     <div class="row">
 
-                      <div id="retainable-rss-embed"
-data-rss="https://medium.com/feed/global-dao"
-data-maxcols="4"
-data-layout="grid"
-data-poststyle="inline"
-data-readmore="Continuar leyendo"
-data-buttonclass="btn btn-primary"
-data-offset="-100"></div>
+                      <div id="medium-widget"></div>
+    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/global-dao","postsPerLine":4,"limit":10,"picture":"small","fields":["description","claps","publishAt"],"ratio":"landscape"}})</script>
+
 
                     </div>
 
@@ -167,7 +163,6 @@ data-offset="-100"></div>
             w3.includeHTML();
         </script>
 
-        <script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
 
 
     </body>
