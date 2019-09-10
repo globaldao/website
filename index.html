@@ -68,11 +68,11 @@ data-background="assets/images/_smarty/boxed_background/1.jpg"
 
 enable-materialdesign 	= enable material design js library
 -->
-    <body class="smoothscroll enable-animation enable-materialdesign">
+    <body ng-app="" class="smoothscroll enable-animation enable-materialdesign">
 
 
         <!-- SLIDE TOP -->
-        <div w3-include-html="slide-top.html"></div>
+        <div ng-include="'slide-top.html'"></div>
         <!-- /SLIDE TOP -->
 
 
@@ -109,7 +109,7 @@ Example Usage:  class="clearfix sticky header-sm transparent b-0"
             <div id="header" class="navbar-toggleable-md clearfix sticky dark b-0">
 
                 <!-- TOP NAV -->
-                <div w3-include-html="top-nav.html"></div>
+                <div ng-include="'top-nav.html'"></div>
                 <!-- /Top Nav -->
 
             </div>
@@ -215,7 +215,7 @@ Example Usage:  class="clearfix sticky header-sm transparent b-0"
             <!-- / -->
 
             <!-- FOOTER -->
-            <div w3-include-html="footer.html"></div>
+            <div ng-include="'footer.html'"></div>
             <!-- /FOOTER -->
 
         </div>
