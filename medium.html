@@ -120,15 +120,14 @@ Example Usage:  class="clearfix sticky header-sm transparent b-0"
                 <div class="container">
                     <div class="row">
 
-                      <script src="https://unpkg.com/dsteem@latest/dist/dsteem.js"></script>
-<script>
-    var client = new dsteem.Client('https://api.steemit.com')
-    client.database.getDiscussions('trending', {tag: 'writing', limit: 1}).then(function(discussions){
-        document.body.innerHTML += '<h1>' + discussions[0].title + '</h1>'
-        document.body.innerHTML += '<h2>by ' + discussions[0].author + '</h2>'
-        document.body.innerHTML += '<pre style="white-space: pre-wrap">' + discussions[0].body + '</pre>'
-    })
-</script>
+                      <div id="retainable-rss-embed"
+data-rss="https://medium.com/feed/global-dao"
+data-maxcols="3"
+data-layout="grid"
+data-poststyle="inline"
+data-readmore="Read the rest"
+data-buttonclass="btn btn-primary"
+data-offset="-100"></div>
 
                     </div>
 
@@ -167,6 +166,8 @@ Example Usage:  class="clearfix sticky header-sm transparent b-0"
         <script>
             w3.includeHTML();
         </script>
+
+        <script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
 
 
     </body>
