@@ -116,26 +116,10 @@ Example Usage:  class="clearfix sticky header-sm transparent b-0"
 
 
             <!-- INICIA CONTENIDO -->
-            <section class="mdl-shadow--4dp">
                 <div class="container">
                     <div class="row">
 
-                      <section id="blog" class="blog">
-  <div class="blog__header">
-    <p class="blog__header1">some of my</p>
-    <h2 class="blog__header2">Medium
-      <span class="blog__header2Span">posts</span>
-    </h2>
-  </div>
-  <ul class="blog__slider">
-    Posts go here
-  </ul>
-  <ul class="blog__counter">
-    <li class="blog__counterItem blog__counterItem-active"></li>
-    <li class="blog__counterItem"></li>
-    <li class="blog__counterItem"></li>
-  </ul>
-</section>
+                      <div class="row" id="jsonContent">
 
                     </div>
                     <div class="row text-center" align="center">
@@ -147,7 +131,6 @@ Example Usage:  class="clearfix sticky header-sm transparent b-0"
             <!-- TERMINA CONTENIDO -->
 
                 </div>
-            </section>
             <!-- / -->
 
             <!-- FOOTER -->
@@ -181,50 +164,50 @@ Example Usage:  class="clearfix sticky header-sm transparent b-0"
         </script>
 
         <script>
-        fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/global-dao')
-   .then((res) => res.json())
-   .then((data) => {
-      // Filter for acctual posts. Comments don't have categories, therefore can filter for items with categories bigger than 0
-      const res = data.items //This is an array with the content. No feed, no info about author etc..
-      const posts = res.filter(item => item.categories.length > 0) // That's the main trick* !
+        var $content = $('#jsonContent');
+var data = {
+    rss: 'https://medium.com/feed/global-dao'
+};
+$.get('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2Fglobal-dao', data, function (response) {
+    if (response.status == 'ok') {
+        $("#logo").append(`<img src="${response.feed["image"]}" class="rounded mx-auto d-block">`)
+var output = '';
+        $.each(response.items, function (k, item) {
+            output += `<div class="card mb-3 mx-auto mr-5 " style="width: 20rem;">`; //Adding Each Post into a cardvar tagIndex = item.description.indexOf('<img');
+//Find where the img tag startsvar srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex; //Find where the src attribute startsvar srcStart = srcIndex + 5; //Find where the actual image URL starts; 5 for the length of 'src="'var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart; //Find where the URL ends
 
-      // Functions to create a short text out of whole blog's content
-      function toText(node) {
-         let tag = document.createElement('div')
-         tag.innerHTML = node
-         node = tag.innerText
-         return node
-      }
-      function shortenText(text,startingPoint ,maxLength) {
-         return text.length > maxLength?
-         text.slice(startingPoint, maxLength):
-         text
-      }
+var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
 
-      // Put things in right spots of markup
-      let output = '';
-      posts.forEach((item) => {
-         output += `
-         <li class="blog__post">
-            <a href="${item.link}">
-               <img src="${item.thumbnail}" class="blog__topImg"></img>
-               <div class="blog__content">
-                  <div class="blog_preview">
-                     <h2 class="blog__title">${shortenText(item.title, 0, 30)+ '...'}</h2>
-                     <p class="blog__intro">${'...' + shortenText(toText(item.content),60, 300)+ '...'}</p>
-                  </div>
-                  <hr>
-                  <div class="blog__info">
-                     <span class="blog__author">${item.author}</span>
-                     <span class="blog__date">${shortenText(item.pubDate,0 ,10)}</span>
-                  </div>
-               </div>
-            <a/>
-         </li>`
+output += `<img src="${src}" class="card-img-top" alt="Cover image">`; //Adding the image to the Card
 
-      })
-      document.querySelector('.blog__slider').innerHTML = output
-})
+output += `<div class="card-body">`;    //Defining the Card body
+
+output += `<h5 class="card-title"><a href="${item.link}">${item.title}</a></h5>`;   //Hyperlinking the title of the card to the postvar yourString = item.description.replace(/<img[^>]*>/g,""); //We do not want an image in the description so I replace the images with "" (Empty text)
+
+yourString = yourString.replace('h4', 'p'); //Replacing h4 tags with p tags
+
+yourString = yourString.replace('h3', 'p'); //Replacing h3 tags with p tags
+
+var maxLength = 120; // maximum number of characters to extract
+
+//trim the string to the maximum length
+var trimmedString = yourString.substr(0, maxLength);//re-trim if we are in the middle of a word
+trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
+
+output += `<p class="card-text">${trimmedString}...</p>`;
+
+output += `<a href="${item.link}" class="btn btn-outline-success">Read More</a>`;    //Adding a Read More button that links to the original post.
+
+output += '</div></div>';
+
+return k < 10;
+
+});
+
+$content.html(output);   //Feeding the output into the div with id jsonContent
+
+}
+});
         </script>
 
 
