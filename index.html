@@ -1,43 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <title>Global DAO</title>
-        <meta name="description" content="Organización autónoma descentralizada que busca el desarrollo social y la soberanía económica de la población." />
-        <meta name="Author" content="Global DAO [globaldao.network]" />
+	<head>
+		<meta charset="utf-8" />
+		<title>Global DAO</title>
+		<meta name="description" content="Organización Autónoma Descentralizada para proteger los derechos humanos, garantizar que la población pueda desarrollarse social y económicamente y que cuente con acceso a servicios de educación y salud." />
+		<meta name="Author" content="Global DAO [globaldao.network]" />
 
-        <!-- mobile settings -->
-        <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
-        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
-        <!-- WEB FONTS : use %7C instead of | (pipe) -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
 
-        <!-- CORE CSS -->
-        <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
-        <!-- FontAwesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<!-- REVOLUTION SLIDER -->
+		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
 
-        <!--
-MATERIAL DESIGN
-Required: material.min.css before essentials.css
--->
-        <link href="assets/plugins/mdl/material.indigo-blue.min.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
 
-
-        <!-- THEME CSS -->
-        <link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
-
-
-        <!-- PAGE LEVEL SCRIPTS -->
-        <link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
-
-        <!-- DEMO - THIS PAGE ONLY -->
-        <link href="assets/css/demo-menu-blue.css" rel="stylesheet" type="text/css" />
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
 
         <!-- library to include html files and other option -->
         <script src="assets/js/w3.js"></script>
@@ -115,36 +104,363 @@ Example Usage:  class="clearfix sticky header-sm transparent b-0"
             </div>
 
 
-            <!--
-+ OPTIONS
-.fullheight
-.halfheight
-.thirdheight
-.mobile-fullheight
+            <!-- REVOLUTION SLIDER -->
+            			<section id="slider" class="slider fullwidthbanner-container roundedcorners">
+            				<!--
+            					Navigation Styles:
 
-.parallax-slider 	= opacity on scroll down
--->
-            <section id="slider" class="thirdheight mobile-fullheight m-0 parallax-slider" style="background:url('demo_files/images/mdl-blue-min.jpg') center center;">
+            						data-navigationStyle="" theme default navigation
 
-                <div class="display-table">
-                    <div class="display-table-cell vertical-align-middle">
+            						data-navigationStyle="preview1"
+            						data-navigationStyle="preview2"
+            						data-navigationStyle="preview3"
+            						data-navigationStyle="preview4"
 
-                        <div class="container text-center">
-                            <h1 class="m-0 fs-50 fw-300 wow fadeInUp" data-wow-delay="0.4s">Global <b class="fw-600">DAO</b></h1>
-                            <p class="lead font-lato fs-30 wow fadeInUp" data-wow-delay="0.7s">Organización autónoma descentralizada</p>
+            					Bottom Shadows
+            						data-shadow="1"
+            						data-shadow="2"
+            						data-shadow="3"
 
-                            <div class="mt-20">
-                                <a href="#explore-slideto" class="btn btn-default mdl-js-button mdl-js-ripple-effect btn-lg wow fadeInUp scrollTo fw-300" data-offset="160" data-wow-delay="1.5s">CONOCER MÁS</a>
-                            </div>
-                        </div>
+            					Slider Height (do not use on fullscreen mode)
+            						data-height="300"
+            						data-height="350"
+            						data-height="400"
+            						data-height="450"
+            						data-height="500"
+            						data-height="550"
+            						data-height="600"
+            						data-height="650"
+            						data-height="700"
+            						data-height="750"
+            						data-height="800"
+            				-->
+            				<div class="fullscreenbanner" data-navigationStyle="">
+            					<ul class="hide">
 
-                    </div>
-                </div>
+            						<!-- SLIDE  -->
+            						<li data-transition="random" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
 
-                <span class="overlay dark-0"><!-- dark overlay [0 to 9 opacity] --></span>
+            							<img src="assets/images/_smarty/1x1.png" data-lazyload="demo_files/images/1200x800/4-min.jpg" alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
 
-            </section>
-            <!-- -->
+            							<div class="tp-dottedoverlay twoxtwo"><!-- dotted overlay --></div>
+            							<div class="overlay dark-3"><!-- dark overlay [1 to 9 opacity] --></div>
+
+            							<div class="tp-caption customin ltl tp-resizeme text_white"
+            								data-x="center"
+            								data-y="180"
+            								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+            								data-speed="800"
+            								data-start="1000"
+            								data-easing="easeOutQuad"
+            								data-splitin="none"
+            								data-splitout="none"
+            								data-elementdelay="0.01"
+            								data-endelementdelay="0.1"
+            								data-endspeed="1000"
+            								data-endeasing="Power4.easeIn" style="z-index: 10;">
+            								<span class="fw-300">DEVELOPMENT / MARKETING / DESIGN / PHOTO</span>
+            							</div>
+
+            							<div class="tp-caption customin ltl tp-resizeme large_bold_white"
+            								data-x="center"
+            								data-y="230"
+            								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+            								data-speed="800"
+            								data-start="1200"
+            								data-easing="easeOutQuad"
+            								data-splitin="none"
+            								data-splitout="none"
+            								data-elementdelay="0.01"
+            								data-endelementdelay="0.1"
+            								data-endspeed="1000"
+            								data-endeasing="Power4.easeIn" style="z-index: 10;">
+            								WELCOME TO SMARTY
+            							</div>
+
+            							<div class="tp-caption customin ltl tp-resizeme small_light_white"
+            								data-x="center"
+            								data-y="350"
+            								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+            								data-speed="800"
+            								data-start="1400"
+            								data-easing="easeOutQuad"
+            								data-splitin="none"
+            								data-splitout="none"
+            								data-elementdelay="0.01"
+            								data-endelementdelay="0.1"
+            								data-endspeed="1000"
+            								data-endeasing="Power4.easeIn" style="z-index: 10; width: 750px; max-width: 750px; white-space: normal; text-align:center;">
+            								Fabulas definitiones ei pri per recteque hendrerit scriptorem in errem scribentur mel fastidii propriae philosophia cu mea.
+            							</div>
+
+            							<div class="tp-caption customin ltl tp-resizeme"
+            								data-x="center"
+            								data-y="438"
+            								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+            								data-speed="800"
+            								data-start="1550"
+            								data-easing="easeOutQuad"
+            								data-splitin="none"
+            								data-splitout="none"
+            								data-elementdelay="0.01"
+            								data-endelementdelay="0.1"
+            								data-endspeed="1000"
+            								data-endeasing="Power4.easeIn" style="z-index: 10;">
+            								<a href="#purchase" class="btn btn-default btn-lg">
+            									<span>Purchase Smarty Now</span>
+            								</a>
+            							</div>
+
+            						</li>
+
+            						<!-- SLIDE  -->
+            						<li data-transition="random" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+
+            							<img src="assets/images/_smarty/1x1.png" data-lazyload="demo_files/images/1200x800/18-min.jpg" alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
+
+            							<div class="tp-caption mediumlarge_light_white lfb tp-resizeme"
+            								data-x="left" data-hoffset="70"
+            								data-y="133"
+            								data-speed="1000"
+            								data-start="1400"
+            								data-easing="easeOutExpo"
+            								data-splitin="none"
+            								data-splitout="none"
+            								data-elementdelay="0.1"
+            								data-endelementdelay="0.1"
+            								data-endspeed="300">
+            								<span class="fw-300 font-lato">+ Amazing Layouts</span>
+            							</div>
+
+            							<div class="tp-caption mediumlarge_light_white lft tp-resizeme"
+            								data-x="left" data-hoffset="70"
+            								data-y="85"
+            								data-speed="1000"
+            								data-start="1200"
+            								data-easing="easeOutExpo"
+            								data-splitin="none"
+            								data-splitout="none"
+            								data-elementdelay="0.1"
+            								data-endelementdelay="0.1"
+            								data-endspeed="300">
+            								<span class="fw-300 font-lato">+ Awesome  Sliders</span>
+            							</div>
+
+            							<div class="tp-caption block_black sfl tp-resizeme"
+            								data-x="70"
+            								data-y="216"
+            								data-speed="750"
+            								data-start="1900"
+            								data-easing="easeOutExpo"
+            								data-splitin="none"
+            								data-splitout="none"
+            								data-elementdelay="0.1"
+            								data-endelementdelay="0.1"
+            								data-endspeed="300">
+            								<span class="fw-300 font-lato">Premium Sliders That Are Easy To Use With Any Content</span>
+            							</div>
+
+            							<div class="tp-caption block_theme_color sfr tp-resizeme"
+            								data-x="70"
+            								data-y="260"
+            								data-speed="750"
+            								data-start="2200"
+            								data-easing="easeOutExpo"
+            								data-splitin="none"
+            								data-splitout="none"
+            								data-elementdelay="0.1"
+            								data-endelementdelay="0.1"
+            								data-endspeed="300">
+            								<span class="fw-300 font-lato">Loaded With Options, And Is Simply A Joy To Use</span>
+            							</div>
+
+            						</li>
+
+            						<!-- SLIDE -->
+            						<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+
+            							<img src="assets/images/_smarty/1x1.png" data-lazyload="demo_files/images/video/back.jpg" alt="video" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+            							<div class="tp-caption tp-fade fadeout fullscreenvideo"
+            								data-x="0"
+            								data-y="0"
+            								data-speed="1000"
+            								data-start="1100"
+            								data-easing="Power4.easeOut"
+            								data-elementdelay="0.01"
+            								data-endelementdelay="0.1"
+            								data-endspeed="1500"
+            								data-endeasing="Power4.easeIn"
+            								data-autoplay="true"
+            								data-autoplayonlyfirsttime="false"
+            								data-nextslideatend="true"
+            								data-volume="mute"
+            								data-forceCover="1"
+            								data-aspectratio="16:9"
+            								data-forcerewind="on" style="z-index: 2;">
+
+            								<div class="tp-dottedoverlay twoxtwo"><!-- dotted overlay --></div>
+
+            								<video class="" preload="none" width="100%" height="100%" poster="demo_files/images/video/back.jpg">
+            									<source src="demo_files/images/video/back.webm" type="video/webm" />
+            									<source src="demo_files/images/video/back.mp4" type="video/mp4" />
+            								</video>
+
+            							</div>
+
+            							<div class="tp-caption customin ltl tp-resizeme text_white"
+            								data-x="center"
+            								data-y="180"
+            								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+            								data-speed="800"
+            								data-start="1000"
+            								data-easing="easeOutQuad"
+            								data-splitin="none"
+            								data-splitout="none"
+            								data-elementdelay="0.01"
+            								data-endelementdelay="0.1"
+            								data-endspeed="1000"
+            								data-endeasing="Power4.easeIn" style="z-index: 3;">
+            								<span class="fw-300">YOUR FAVORITE MULTIPURPOSE TEMPLATE</span>
+            							</div>
+
+            							<div class="tp-caption customin ltl tp-resizeme large_bold_white"
+            								data-x="center"
+            								data-y="230"
+            								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+            								data-speed="800"
+            								data-start="1200"
+            								data-easing="easeOutQuad"
+            								data-splitin="none"
+            								data-splitout="none"
+            								data-elementdelay="0.01"
+            								data-endelementdelay="0.1"
+            								data-endspeed="1000"
+            								data-endeasing="Power4.easeIn" style="z-index: 3;">
+            								WELCOME TO SMARTY
+            							</div>
+
+            							<div class="tp-caption customin ltl tp-resizeme small_light_white"
+            								data-x="center"
+            								data-y="350"
+            								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+            								data-speed="800"
+            								data-start="1400"
+            								data-easing="easeOutQuad"
+            								data-splitin="none"
+            								data-splitout="none"
+            								data-elementdelay="0.01"
+            								data-endelementdelay="0.1"
+            								data-endspeed="1000"
+            								data-endeasing="Power4.easeIn" style="z-index: 3; width: 750px; max-width: 750px; white-space: normal; text-align:center;">
+            								Fabulas definitiones ei pri per recteque hendrerit scriptorem in errem scribentur mel fastidii propriae philosophia cu mea.
+            							</div>
+
+            							<div class="tp-caption customin ltl tp-resizeme"
+            								data-x="center"
+            								data-y="438"
+            								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+            								data-speed="800"
+            								data-start="1550"
+            								data-easing="easeOutQuad"
+            								data-splitin="none"
+            								data-splitout="none"
+            								data-elementdelay="0.01"
+            								data-endelementdelay="0.1"
+            								data-endspeed="1000"
+            								data-endeasing="Power4.easeIn" style="z-index: 3;">
+            								<a href="#purchase" class="btn btn-default btn-lg">
+            									<span>Purchase Smarty Now</span>
+            								</a>
+            							</div>
+
+            						</li>
+
+            						<!-- SLIDE -->
+            						<li data-transition="random" data-slotamount="1" data-masterspeed="1500" data-delay="10000"  data-saveperformance="off"  data-title="Slide">
+            							<img src="assets/images/_smarty/1x1.png" data-lazyload="demo_files/images/1200x800/28-min.jpg" alt="kenburns6" data-bgposition="left top" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right bottom">
+            							<!-- LAYERS -->
+
+            							<!-- LAYER NR. 2 -->
+            							<div class="tp-caption customin ltl tp-resizeme"
+            								data-x="200"
+            								data-y="150"
+            								data-customin="x:-200;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+            								data-speed="800"
+            								data-start="1500"
+            								data-easing="easeOutQuad"
+            								data-splitin="none"
+            								data-splitout="none"
+            								data-elementdelay="0.01"
+            								data-endelementdelay="0.1"
+            								data-endspeed="1000"
+            								data-endeasing="Power4.easeIn" style="z-index: 3; color: #212121; font-size:20px; font-weight:300; text-shadow:none;">
+            								DEVELOPMENT / MARKETING / DESIGN
+            							</div>
+
+            							<div class="tp-caption customin ltl tp-resizeme"
+            								data-x="200"
+            								data-y="180"
+            								data-customin="x:10;y:0;z:0;rotationY:120;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 50%;"
+            								data-speed="600"
+            								data-start="1700"
+            								data-easing="easeOutCubic"
+            								data-splitin="chars"
+            								data-splitout="none"
+            								data-elementdelay="0.1"
+            								data-endelementdelay="0.1"
+            								data-endspeed="1000"
+            								data-endeasing="Power4.easeIn" style="z-index: 3; color: #666; line-height: 1.2; max-width: 450px; width: 450px; white-space: normal; font-size:60px; font-weight:bold;">
+            								Responsive Multipurpose Template
+            							</div>
+
+            						</li>
+
+            						<!-- SLIDE  -->
+            						<li data-transition="random" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+
+            							<img src="assets/images/_smarty/1x1.png" data-lazyload="demo_files/images/1200x800/19-min.jpg" alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
+
+            							<div class="tp-caption very_large_text lfb ltt tp-resizeme"
+            								data-x="right" data-hoffset="-100"
+            								data-y="center" data-voffset="-100"
+            								data-speed="600"
+            								data-start="800"
+            								data-easing="Power4.easeOut"
+            								data-splitin="none"
+            								data-splitout="none"
+            								data-elementdelay="0.01"
+            								data-endelementdelay="0.1"
+            								data-endspeed="500"
+            								data-endeasing="Power4.easeIn">
+            								RUN WILD
+            							</div>
+
+            							<div class="tp-caption medium_light_white lfb ltt tp-resizeme"
+            								data-x="right" data-hoffset="-100"
+            								data-y="center" data-voffset="10"
+            								data-speed="600"
+            								data-start="900"
+            								data-easing="Power4.easeOut"
+            								data-splitin="none"
+            								data-splitout="none"
+            								data-elementdelay="0.01"
+            								data-endelementdelay="0.1"
+            								data-endspeed="500"
+            								data-endeasing="Power4.easeIn">
+            								Happiness is an accident of nature,<br/>
+            								a beautiful and flawless aberration.<br/>
+            								<span style="font-size:24px;font-weight:400;">&ndash; Pat Conroy</span>
+            							</div>
+
+            						</li>
+
+            					</ul>
+            					<div class="tp-bannertimer"></div>
+            				</div>
+            			</section>
+            			<!-- /REVOLUTION SLIDER -->
+
 
             <section class="section-xs">
             	<div class="container">
@@ -243,8 +559,12 @@ Example Usage:  class="clearfix sticky header-sm transparent b-0"
         <!-- JAVASCRIPT FILES -->
         <script>var plugin_path = 'assets/plugins/';</script>
         <script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
-
         <script src="assets/js/scripts.js"></script>
+
+        <!-- REVOLUTION SLIDER -->
+		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="assets/js/view/demo.revolution_slider.js"></script>
 
         <script>
             w3.includeHTML();
