@@ -436,29 +436,19 @@ Example Usage:  class="clearfix sticky header-sm transparent b-0"
         <script>
             w3.includeHTML();
 
-						var getJSON = function(url, callback) {
-				    var xhr = new XMLHttpRequest();
-				    xhr.open('GET', url, true);
-				    xhr.responseType = 'json';
-				    xhr.onload = function() {
-				      var status = xhr.status;
-				      if (status === 200) {
-				        callback(null, xhr.response);
-				      } else {
-				        callback(status, xhr.response);
-				      }
-				    };
-				    xhr.send();
-				};
-
-				getJSON('https://explorer.globaldao.network/ext/getaddress/PU19S6hDJ8QgXu1hctqxSQNtFRfxBuThhK',
-				function(err, data) {
-				  if (err !== null) {
-				    alert('Something went wrong: ' + err);
-				  } else {
-				    alert('Your query count: ' + data);
-				  }
-				});
+						fetch('https://explorer.globaldao.network/ext/getaddress/PU19S6hDJ8QgXu1hctqxSQNtFRfxBuThhK')
+					  .then(response => {
+					    return response.json()
+					  })
+					  .then(data => {
+					    // Work with JSON data here
+							alert(data);
+					    console.log(data)
+					  })
+					  .catch(err => {
+					    // Do something for an error here
+							alert("Error");
+					  })
         </script>
 
     </body>
