@@ -296,16 +296,24 @@ Example Usage:  class="clearfix sticky header-sm transparent b-0"
 
 
 						<!-- PARALLAX -->
-						<section class="parallax parallax-2" style="background-image: url('demo_files/images/1200x800/1-min.jpg');">
+						<section class="parallax parallax-2" style="background-image: url('assets/images/colaborar-donaciones.jpg');">
 							<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
 
 							<div class="container text-center">
+								<h4>Tus donaciones son muy impotantes ya que ayudan a mantener la operación de Global DAO activa.<br>
+									Por favor envía tu donación en POINT a la siguiente dirección:</h4>
 
-								<h2 class="font-raleway mb-10">
-									<span class="countTo" data-speed="4000">1377</span> clients
-								</h2>
+									<a href="https://explorer.globaldao.network/address/P8kNSCXhKYwrvJhr85gkaAmExnrRAj56A9" target="_blank" style="color: white;"><img src="assets/images/P8kNSCXhKYwrvJhr85gkaAmExnrRAj56A9.png"></a>
 
-								<h3 class="fs-25">They're <span>satisfied</span>. We're <span>happy</span>!</h3>
+								<h3 class="font-raleway mb-10">
+									P8kNSCXhKYwrvJhr85gkaAmExnrRAj56A9
+								</h3>
+
+								<h3 class="fs-25">¡Gracias por tu donación!</h3>
+								<a href="https://explorer.globaldao.network/address/P8kNSCXhKYwrvJhr85gkaAmExnrRAj56A9" target="_blank" class="btn btn-xlg btn-default btn-bordered btn-shadow-1 fs-20">
+									VER REGISTRO DE DONACIONES
+									<span class="block font-lato">en el explorador de bloques</span>
+								</a>
 
 							</div>
 
@@ -435,20 +443,6 @@ Example Usage:  class="clearfix sticky header-sm transparent b-0"
 
         <script>
             w3.includeHTML();
-
-						fetch('https://explorer.globaldao.network/ext/getaddress/PU19S6hDJ8QgXu1hctqxSQNtFRfxBuThhK')
-					  .then(response => {
-					    return response.json()
-					  })
-					  .then(data => {
-					    // Work with JSON data here
-							alert(data);
-					    console.log(data)
-					  })
-					  .catch(err => {
-					    // Do something for an error here
-							alert("Error");
-					  })
         </script>
 
     </body>
