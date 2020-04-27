@@ -30,6 +30,17 @@
 
         <!-- library to include html files and other option -->
         <script src="assets/js/w3.js"></script>
+		
+		<script>
+        window.onload = function () {
+            var t = document.querySelector('#widget')
+            window.binanceFiatWidget.Widget(t, {
+                urlParmas: {
+                        ref: '17267055'
+                }
+            })
+        }
+    </script>
     </head>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
@@ -274,6 +285,13 @@ Example Usage:  class="clearfix sticky header-sm transparent b-0"
 </div>
 
 <hr/>
+								<div class="row">
+									<div class="col-md-12">
+										<script src="https://bin.bnbstatic.com/static/js/ocbs/binance-fiat-widget.js"></script> 
+    <div id="widget"></div>
+									</div>
+								</div>
+								<hr/>
 <div class="container">
 	<h1 class="text-right">Plan <strong>Fase CERO</strong></h1>
 	<a href="fasecero.html"><img class="float-right img-fluid" src="assets/images/fasecero.jpg" width="300" alt="Constitución" /></a>
